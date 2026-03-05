@@ -23,7 +23,7 @@ static std::string esc_bg(int r, int g, int b) {
 }
 
 static void set_defaults() {
-    // btop Default theme — exact color values from btop Default.theme
+    // sysmon default theme colors
     colors["main_bg"]          = {0x14, 0x14, 0x14};
     colors["main_fg"]          = {0xcc, 0xcc, 0xcc};
     colors["title"]            = {0x50, 0xc8, 0xff};  // bright cyan

@@ -127,7 +127,7 @@ void collect() {
     rx_str=fmt_speed(rx_speed); tx_str=fmt_speed(tx_speed);
     rx_total_str=fmt_bytes(rx_total); tx_total_str=fmt_bytes(tx_total);
 
-    // normalize to % for graph (auto-scaling like btop)
+    // normalize to % for graph (auto-scaling)
     if(rx_speed>rx_max) rx_max=rx_speed*1.2;
     if(tx_speed>tx_max) tx_max=tx_speed*1.2;
     // slowly decay max

@@ -2,8 +2,8 @@ name: sysmon
 version: '0.1.0'
 summary: Resource monitor for Linux terminals
 description: |
-  A btop-style TUI system monitor showing CPU, memory, network,
-  and process information with braille graphs and color themes.
+  A real-time TUI system monitor with braille graphs, per-core CPU meters,
+  GPU monitoring, and a full process table. Written in C++23.
 
 base: core22
 grade: stable

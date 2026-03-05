@@ -11,8 +11,7 @@ sysmon — resource monitor for Linux
 ## DESCRIPTION
 
 **sysmon** is a terminal-based resource monitor showing CPU, memory, network,
-and process information in a btop-style interface with braille graphs and
-color themes.
+and process information with braille graphs and color themes.
 
 ## OPTIONS
 
@@ -20,75 +19,44 @@ color themes.
 : Print help and exit.
 
 `-v`, `--version`
-: Print version string and exit.
+: Print version and exit.
 
 `-t`, `--tty`
-: Force TTY mode. Uses only 256 colors and ASCII box characters.
+: Force TTY mode (256 colors, ASCII box chars).
 
 `-l`, `--low-color`
-: Force 256-color mode (no true color).
+: Force 256-color mode.
 
 `-u` *MS*, `--update` *MS*
 : Set update interval to *MS* milliseconds. Default: 2000.
 
 `-f` *STR*, `--filter` *STR*
-: Set initial process filter to *STR*.
+: Set initial process filter.
 
 `--utf-force`
-: Start even if no UTF-8 locale is detected.
+: Start even without detected UTF-8 locale.
 
 ## KEYBINDINGS
 
-`q`, `Ctrl-C`
-: Quit.
-
-`j` / `↓`, `k` / `↑`
-: Navigate process list.
-
-`r`
-: Reverse sort order.
-
-`t`
-: Toggle tree view.
-
-`f`
-: Focus filter input.
-
-`Esc`
-: Clear filter.
-
-`+` / `-`
-: Increase / decrease update interval by 100ms.
-
-`1`–`4`
-: Toggle CPU / MEM / NET / PROC boxes.
-
-`F5`
-: Force full redraw.
+`q`, `Ctrl-C` — Quit  
+`j`/`↓`, `k`/`↑` — Navigate process list  
+`r` — Reverse sort  
+`t` — Toggle tree view  
+`f` — Filter input  
+`Esc` — Clear filter  
+`+`/`-` — Adjust update interval  
+`F5` — Force redraw  
 
 ## FILES
 
-`~/.config/sysmon/sysmon.conf`
-: User configuration file.
-
-`~/.config/sysmon/themes/`
-: User theme directory.
-
-`/usr/local/share/sysmon/themes/`
-: System-wide theme directory (when installed).
-
-## ENVIRONMENT
-
-`TERM`
-: Used to detect color capabilities.
-
-`LC_ALL`, `LANG`
-: Must support UTF-8 for full rendering.
+`~/.config/sysmon/sysmon.conf` — user config  
+`~/.config/sysmon/themes/` — user themes  
+`/usr/local/share/sysmon/themes/` — system themes  
 
 ## SEE ALSO
 
-top(1), htop(1), btop(1)
+top(1), htop(1)
 
 ## AUTHORS
 
-sysmon contributors. Inspired by btop++ by aristocratos.
+0xtooda and sysmon contributors.

@@ -1,4 +1,4 @@
-/* sysmon draw.cpp — btop-identical TUI renderer
+/* sysmon draw.cpp — sysmon TUI renderer
    Copyright 2025 sysmon contributors, Apache-2.0 */
 
 #include "../include/draw.hpp"
@@ -95,7 +95,7 @@ static void clr(std::ostringstream& o, int x, int y, int w, int h) {
 }
 
 // ═════════════════════════════════════════════════════════════════
-// BRAILLE GRAPH  (btop-identical, newest sample = rightmost cell)
+// BRAILLE GRAPH  (braille graph, newest sample = rightmost cell)
 // Each terminal cell = 2 data-columns × 4 sub-rows
 // Left  bits: 0x01 0x02 0x04 0x40  (bottom → top)
 // Right bits: 0x08 0x10 0x20 0x80
@@ -142,7 +142,7 @@ static void graph(std::ostringstream& o,
 }
 
 // ═════════════════════════════════════════════════════════════════
-// METER BAR  (solid ▌ blocks with gradient — btop CPU total bar)
+// METER BAR  (solid ▌ blocks with gradient — CPU total bar)
 // ═════════════════════════════════════════════════════════════════
 
 static void meter(std::ostringstream& o, int x, int y, int w, double val,
@@ -159,7 +159,7 @@ static void meter(std::ostringstream& o, int x, int y, int w, double val,
 }
 
 // ═════════════════════════════════════════════════════════════════
-// DOT BAR  (btop per-core style: thin dotted ▏ chars)
+// DOT BAR  (thin dotted ▏ chars)
 // ═════════════════════════════════════════════════════════════════
 
 static void dotbar(std::ostringstream& o, int x, int y, int w, double val,
@@ -219,7 +219,7 @@ static void vdiv(std::ostringstream& o, int x, int y1, int y2, const std::string
 }
 
 // ═════════════════════════════════════════════════════════════════
-// LAYOUT  — matches btop screenshot exactly
+// LAYOUT  — layout
 // ═════════════════════════════════════════════════════════════════
 
 struct Layout {
@@ -615,7 +615,7 @@ static void draw_proc(std::ostringstream& o, const Layout& L) {
       << Theme::fg("proc_box") << u8(0x251c) << RST;
 
     // ── Columns ───────────────────────────────────────────────
-    // Match btop: Pid | Program | Command | Threads | User | MemB | Cpu%↑
+    // Columns: Pid | Program | Command | Threads | User | MemB | Cpu%↑
     // Fixed-width columns, cmd gets the remainder
     // Total fixed = pid+prog+thr+usr+mem+cpu + spaces
     int w_pid  = 7;
