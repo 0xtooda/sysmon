@@ -115,7 +115,7 @@ Included themes:
 - `Nord`
 - `Dracula`
 
-Any `.theme` file from [btop's themes](https://github.com/aristocratos/btop/tree/main/themes) is compatible.
+Any `.theme` file from [btop's themes](https://github.com/0xtooda/sysmon/themes) is compatible.
 
 ---
 
