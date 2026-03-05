@@ -105,6 +105,9 @@ sysmon/
 ```
 
 ---
+<img width="859" height="303" alt="image copy 4" src="https://github.com/user-attachments/assets/e9733ede-cd85-47de-a192-109aa76385da" />
+<img width="1042" height="651" alt="image copy 2" src="https://github.com/user-attachments/assets/bf4ad08c-9cf4-4027-a332-8b055d7f4d43" />
+
 
 ## License
 Apache-2.0 © 2026 0xtooda
