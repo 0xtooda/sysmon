@@ -106,5 +106,6 @@ sysmon/
 ---
 
 ## License
+<img width="1897" height="1032" alt="image copy 5" src="https://github.com/user-attachments/assets/0341e1cd-ac0c-4d68-bdd5-2ed9e7d383bf" />
 
 Apache-2.0 © 2025 0xtooda
