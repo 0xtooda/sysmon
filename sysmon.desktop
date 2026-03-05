@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=sysmon
+GenericName=System Monitor
+Comment=Resource monitor for Linux terminals
+Icon=sysmon
+Exec=sysmon
+Terminal=true
+Categories=System;Monitor;ConsoleOnly;
+Keywords=system;monitor;cpu;memory;network;process;top;htop;
+StartupNotify=false

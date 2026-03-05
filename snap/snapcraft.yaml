@@ -1,0 +1,30 @@
+name: sysmon
+version: '0.1.0'
+summary: Resource monitor for Linux terminals
+description: |
+  A btop-style TUI system monitor showing CPU, memory, network,
+  and process information with braille graphs and color themes.
+
+base: core22
+grade: stable
+confinement: strict
+
+parts:
+  sysmon:
+    plugin: make
+    source: .
+    build-packages:
+      - g++-13
+    override-build: |
+      make CXX=g++-13
+      install -Dm755 sysmon $SNAPCRAFT_PART_INSTALL/bin/sysmon
+      install -d $SNAPCRAFT_PART_INSTALL/share/sysmon/themes
+      install -m644 themes/*.theme $SNAPCRAFT_PART_INSTALL/share/sysmon/themes/
+
+apps:
+  sysmon:
+    command: bin/sysmon
+    plugs:
+      - hardware-observe
+      - system-observe
+      - network-observe
