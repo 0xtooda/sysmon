@@ -10,6 +10,7 @@
 ```
 
 **A fast, feature-rich TUI system monitor written in C++23**
+<img width="1897" height="1032" alt="image copy 5" src="https://github.com/user-attachments/assets/5c3dd06a-3398-45a2-ae63-20074e39255d" />
 
 [![Build](https://github.com/0xtooda/sysmon/actions/workflows/build.yml/badge.svg)](https://github.com/0xtooda/sysmon/actions/workflows/build.yml)
 ![License](https://img.shields.io/badge/license-Apache--2.0-blue)
@@ -106,6 +107,4 @@ sysmon/
 ---
 
 ## License
-<img width="1897" height="1032" alt="image copy 5" src="https://github.com/user-attachments/assets/0341e1cd-ac0c-4d68-bdd5-2ed9e7d383bf" />
-
-Apache-2.0 © 2025 0xtooda
+Apache-2.0 © 2026 0xtooda
